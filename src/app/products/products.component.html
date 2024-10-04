@@ -1,5 +1,21 @@
-<h2>Products</h2>
-<ul>
-  <li *ngFor="let product of products">{{ product.name }} - ${{ product.price }}</li>
-</ul>
-
+<div class="container mt-4">
+  <h2>Products</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.description }}</td>
+        <td>{{ product.price | currency }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
