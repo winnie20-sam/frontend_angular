@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -10,4 +11,11 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'angular-project';
+
+
+  // private apiUrl = 'http://127.0.0.1:8000/api';
+
+  // http = inject(HttpClient);
+
+
 }
